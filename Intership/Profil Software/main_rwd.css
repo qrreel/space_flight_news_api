@@ -1,0 +1,32 @@
+@media (max-width: 820px) {   
+    html {
+        padding: 25px;
+    }
+    
+    body {
+        width: 400px;
+    }
+    
+    .header-container {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-row-gap: 10px;
+    }
+    
+    .header {
+        font-size: 20px;
+    }
+    
+    .news-site, .published-at {
+        width: 40%;
+        padding: 10px;
+    }
+    
+    .add-to-library-btn {
+        width: 100%;
+    }
+    
+    .go-to-article {
+        width: 100%;
+    }
+}
