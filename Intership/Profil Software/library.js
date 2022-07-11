@@ -67,6 +67,7 @@ sortCondition.addEventListener('change', () => {
 })
 
 const sortByTitle = () => {
+    let savedNews = JSON.parse(localStorage.getItem("spaceflightnewsapi"))
     let array = [...savedNews].sort(function(a, b) {
         if(a.title > b.title) {
             return 1
@@ -79,6 +80,7 @@ const sortByTitle = () => {
 }
 
 const sortByPublishedAtAscending = () => {
+    let savedNews = JSON.parse(localStorage.getItem("spaceflightnewsapi"))
     let array = [...savedNews].sort(function(a, b) {
         if(a.publishedAt > b.publishedAt) {
             return 1
@@ -91,6 +93,7 @@ const sortByPublishedAtAscending = () => {
 }
 
 const sortByPublishedAtDescending = () => {
+    let savedNews = JSON.parse(localStorage.getItem("spaceflightnewsapi"))
     let array = [...savedNews].sort(function(a, b) {
         if(a.publishedAt > b.publishedAt) {
             return 1
